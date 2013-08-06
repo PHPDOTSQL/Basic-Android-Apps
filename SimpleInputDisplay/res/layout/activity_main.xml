@@ -1,0 +1,49 @@
+<!-- 
+We are going to use the LinearLayout this time. It Aligns all elements 
+in one direction. We will define that by setting orientation to 
+horizontal. LinearLayout is the root view and it will fill the
+devices screen. 
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!-- 
+    To create a editable text field add an EditText element. By setting
+    id you'll be able to reference this element in your app code. @ is used 
+    when referring to an object from XML. Then id is the resource type. Then
+    you have the resource name. You use the plus sign only when you create a 
+    resource for the first time. We use wrap_content to avoid using pixels.
+    hint is the String that will be displayed in the textfield by default.
+    This refers to a String resource that is defined in another file. 
+    If you want the textfield to fill the space not taken up by the button
+    you can assign layout_weight with a value greater then 0. Every element
+    has a default weight of zero. If you give one element a weight of 2 
+    and the other a weight of 1, the first will take up 2/3rds of the row
+    and the next the last 3rd. layout_width is now irrelevant because the
+    weight has been set.
+     -->
+    
+    <EditText android:id="@+id/edit_message"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+    	android:layout_height="wrap_content"
+    	android:hint="@string/edit_message" />
+    
+    <!-- 
+    Use Button to create a button. Pull the String for the button from
+    strings.xml
+    By assigning sendMessage to onClick, when the button is clicked the
+    method sendMessage will be executed.
+     -->
+    
+    <Button 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/button_send"
+    	android:onClick="sendMessage" />
+
+</LinearLayout>

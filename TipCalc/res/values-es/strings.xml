@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalc</string>
+    <string name="action_settings">Configuración</string>
+   
+    <string name="bill_edit_text">0.0</string>
+    <string name="bill_text_view">factura</string>
+   
+    <string name="tip_edit_text">.15</string>
+    <string name="tip_text_view">gratificación</string>
+    
+    <string name="final_bill_edit_text">.15</string>
+    <string name="final_bill_text_view">última factura</string>
+    
+    <string name="change_tip_text_view">gratificación</string>
+    
+</resources>
